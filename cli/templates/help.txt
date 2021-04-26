@@ -1,0 +1,16 @@
+This utility generates an ipsec.conf file that can be used to generate configuration
+for IKEv2 vpn connections for ProtonVPN. You can replace this file 
+with the default /etc/ipsec.conf or link it using the include directive 
+for ProtonVPN.
+
+This would be specified like this
+
+    include [filename].conf
+
+For more information visit
+{.githubRepoLink}
+
+It helps automating the configuration part so you don't have to manually add 
+each server one by one, which can get a bit frustrating. For more information on
+how to acquire all the credentials this tutorial might help 
+https://protonvpn.com/support/linux-ikev2-protonvpn/
