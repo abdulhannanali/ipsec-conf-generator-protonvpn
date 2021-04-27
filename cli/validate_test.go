@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -42,22 +43,22 @@ func Test_validatePathFlag(t *testing.T) {
 		errPart string
 	}{
 		{
-			"./fixtures/validatePathFlag/one",
+			filepath.Join(".", "fixtures", "validatePathFlag", "one"),
 			"already exists",
 		},
 
 		{
-			"./fixtures/validatePathFlag/three",
+			filepath.Join(".", "fixtures", "validatePathFlag", "three"),
 			"",
 		},
 
 		{
-			"./fixtures/validatePathFlag",
+			filepath.Join("fixtures", "validatePathFlag"),
 			"is a directory",
 		},
 
 		{
-			"./fixtures/validatePathFlag/doesNotExist",
+			filepath.Join(".", "fixtures", "validatePathFlag", "doesNotExist"),
 			"",
 		},
 	}

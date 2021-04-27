@@ -3,7 +3,7 @@ package cli
 import (
 	"fmt"
 	"os"
-	"path"
+	"path/filepath"
 	"strings"
 )
 
@@ -36,7 +36,7 @@ func validateStringFlag(fieldName, str string) error {
 
 func validatePathFlag(fieldName, pathValue string) error {
 	if len(pathValue) > 0 {
-		dir := path.Dir(pathValue)
+		dir := filepath.Dir(pathValue)
 		dirStat, err := os.Stat(dir)
 
 		if err != nil {
