@@ -52,7 +52,7 @@ func Test_validatePathFlag(t *testing.T) {
 		},
 
 		{
-			"./fixtures/validatePathFlag/sampleDirectory",
+			"./fixtures/validatePathFlag",
 			"is a directory",
 		},
 
