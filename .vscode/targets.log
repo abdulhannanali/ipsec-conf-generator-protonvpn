@@ -1,0 +1,410 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Apr 27 15:26:52 2021
+
+# Variables
+
+# makefile (from 'Makefile', line 5)
+PKG_NAME = github.com/abdulhannanali/protonvpn-ikev2-generator/cli/main
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+NVM_INC = /home/lampriversong/.nvm/versions/node/v15.13.0/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/lampriversong/work-folder/code/github-repos/abdulhhannanali/wireguard-protonvpn-profile-generator
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/62
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:72144
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# environment
+GVM_ROOT = /home/lampriversong/.gvm
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 9)
+386_ARCH = 386
+# environment
+USERNAME = lampriversong
+# makefile (from 'Makefile', line 10)
+ARM_ARCH = arm
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/62/usr/share/code/code
+# makefile (from 'Makefile', line 8)
+AMD64_ARCH = amd64
+# environment
+MANAGERPID = 1960
+# environment
+GVM_PATH_BACKUP = /home/lampriversong/.gvm/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = ur_PK
+# environment
+VSCODE_CWD = /home/lampriversong
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/62/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/lampriversong/.local/bin:/home/lampriversong/.nvm/versions/node/v15.13.0/bin:/home/lampriversong/.gvm/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/lampriversong:@/tmp/.ICE-unix/2183,unix/lampriversong:/tmp/.ICE-unix/2183
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/lampriversong/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/62
+# makefile (from 'Makefile', line 15)
+GOOS_DARWIN = darwin
+# environment
+NVM_BIN = /home/lampriversong/.nvm/versions/node/v15.13.0/bin
+# environment
+BREAKPAD_DUMP_LOCATION = /home/lampriversong/.config/Code/exthost Crash Reports
+# environment
+SNAP_VERSION = 3c4e3df9
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=d8c5ffbf-fa2c-404f-8763-47219f33c571&iid=d8c5ffbf-fa2c-404f-8763-47219f33c571&sid=d8c5ffbf-fa2c-404f-8763-47219f33c571","uploadToServer":true}
+# environment
+INVOCATION_ID = 7d696885e23546aab6520f9e49453aa5
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/62/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 5877
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'Makefile', line 14)
+GOOS_LINUX = linux
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/lampriversong/work-folder/code/github-repos/abdulhhannanali/wireguard-protonvpn-profile-generator
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 2139
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/lampriversong
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+LOGNAME = lampriversong
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = hcF-fqMKjKHodZVfjiiIzi9zmJZI5uDHoPEZhPT0TxFAEmbYDrOf
+# environment
+NVM_CD_FLAGS = 
+# automatic
++F = $(notdir $+)
+# environment
+SNAP_USER_COMMON = /home/lampriversong/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+GVM_VERSION = 1.0.22
+# environment
+LC_TIME = ur_PK
+# environment
+SNAP_REAL_HOME = /home/lampriversong
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/lampriversong/snap/code/62
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# makefile (from 'Makefile', line 3)
+BIN_FOLDER = releases
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-384d8452-2672-4ba7-a806-780cf68b2e6f.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = lampriversong
+# environment
+SNAP_REVISION = 62
+# environment
+LC_MONETARY = ur_PK
+# makefile
+.DEFAULT_GOAL := lint
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 2)
+BIN_NAME = profiles-generator-cli
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = ur_PK
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/lampriversong/.config/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-5f75d1a9-1.55.2-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/lampriversong/.nvm
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+LC_PAPER = ur_PK
+# environment
+LC_IDENTIFICATION = ur_PK
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = hcF-fqMKjKHodZVfjiiIzi9zmJZI5uDHoPEZhPT0TxFAEmbYDrOf
+# environment
+LC_NUMERIC = ur_PK
+# automatic
+<F = $(notdir $<)
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+LC_MEASUREMENT = ur_PK
+# environment
+SNAP_NAME = code
+# makefile (from 'Makefile', line 13)
+GOOS_WINDOWS = windows
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = ur_PK
+# environment
+LANG = en_US.UTF-8
+# environment
+VSCODE_PID = 5924
+# variable set hash-table stats:
+# Load=147/1024=14%, Rehash=0, Collisions=24/172=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64769, inode 14293419): 14 files, no impossibilities.
+
+# 14 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+.:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+golangci-lint:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compile-linux-amd64:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	@GOOS=$(GOOS_LINUX) GOARCH=$(AMD64_ARCH) go build  	
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-04-27 05:24:55.193677375
+#  File has been updated.
+#  Successfully updated.
+
+test: lint
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	go test ./...
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	@go clean
+	rm -rf $(BIN_FOLDER)
+
+lint: golangci-lint run .
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=11/1024=1%, Rehash=0, Collisions=0/25=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 220 B / avg = 8 B
+# current buf: size = 8162 B / used = 220 B / count = 25 / avg = 8 B
+
+# strcache performance: lookups = 35 / hit rate = 28%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/35=3%
+# Finished Make data base on Tue Apr 27 15:26:52 2021
+
+ 

@@ -1,4 +1,4 @@
-module github.com/abdulhannanali/protonvpn-ikev2-generator
+module github.com/abdulhannanali/ipsec-conf-generator-protonvpn
 
 go 1.16
 
