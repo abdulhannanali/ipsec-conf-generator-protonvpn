@@ -60,6 +60,5 @@ lint:
 test: lint
 	@go test ./...
 
-
-codecov:
-	go
+install:
+	go install ./...
