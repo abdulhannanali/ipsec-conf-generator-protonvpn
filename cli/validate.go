@@ -3,7 +3,6 @@ package cli
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 	"strings"
 )
 
@@ -35,32 +34,19 @@ func validateStringFlag(fieldName, str string) error {
 }
 
 func validatePathFlag(fieldName, pathValue string) error {
-	if len(pathValue) > 0 {
-		dir := filepath.Dir(pathValue)
-		dirStat, err := os.Stat(dir)
+	fileInfo, err := os.Stat(pathValue)
 
-		if err != nil {
-			return err
-		}
-
-		if dirStat != nil && !dirStat.IsDir() {
-			return fmt.Errorf("\"%s\" is a file", pathValue)
-		}
-
-		fileStat, err := os.Stat(pathValue)
-
-		if err != nil && strings.Contains(err.Error(), "no such file") {
+	if err != nil {
+		if strings.Contains(err.Error(), "no such file") {
 			return nil
-		}
-
-		if fileStat.IsDir() {
-			return fmt.Errorf("\"%s\" is a directory", pathValue)
-		}
-
-		if fileStat != nil {
-			return fmt.Errorf("\"%s\" already exists", pathValue)
+		} else {
+			return err
 		}
 	}
 
-	return nil
+	if fileInfo != nil {
+		return fmt.Errorf("something already exists at %s", pathValue)
+	}
+
+	return err
 }

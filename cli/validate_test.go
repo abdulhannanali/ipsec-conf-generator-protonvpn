@@ -43,23 +43,13 @@ func Test_validatePathFlag(t *testing.T) {
 		errPart string
 	}{
 		{
-			filepath.Join(".", "fixtures", "validatePathFlag", "one"),
-			"already exists",
-		},
-
-		{
-			filepath.Join(".", "fixtures", "validatePathFlag", "three"),
+			filepath.Join("fixtures", "validatePathFlag", "doesNotExist"),
 			"",
 		},
 
 		{
-			filepath.Join("fixtures", "validatePathFlag"),
-			"is a directory",
-		},
-
-		{
-			filepath.Join(".", "fixtures", "validatePathFlag", "doesNotExist"),
-			"",
+			filepath.Join("fixtures", "validatePathFlag", "one"),
+			"something already exists",
 		},
 	}
 
@@ -71,10 +61,8 @@ func Test_validatePathFlag(t *testing.T) {
 			t.Errorf("error expected but no error returned for test case: %d", i)
 		}
 
-		if err != nil && errPart != "" {
-			if !(strings.Contains(err.Error(), errPart)) {
-				t.Errorf("error does not contain \"%s\"\nfullError: %s", errPart, err.Error())
-			}
+		if err != nil && errPart != "" && !strings.Contains(err.Error(), errPart) {
+			t.Errorf("error does not contain \"%s\"\nfullError: %s", errPart, err.Error())
 		}
 	}
 }
