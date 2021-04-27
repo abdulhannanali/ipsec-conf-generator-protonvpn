@@ -1,4 +1,3 @@
-### Local Environment Variables
 export BIN_NAME=ipsec-protonvpn-cli
 export BIN_FOLDER=releases
 
@@ -10,7 +9,7 @@ generate_bin_name_fn = compile-ipsec-generator-$(0)-$(1)
 compile-all: compile-windows compile-linux compile-darwin
 compile-windows: compile-windows-amd64 compile-windows-386
 compile-linux: compile-linux-amd64 compile-linux-386
-compile-darwin: compile-darwin-amd64 compile-darwin-arm
+compile-darwin: compile-darwin-amd64
 
 compile-linux-amd64: create-releases-directory
 	@echo Building Linux AMD64
@@ -42,11 +41,6 @@ compile-darwin-amd64:	create-releases-directory
 		$(BIN_FOLDER)/$(BIN_NAME)-darwin-amd64 \
 		$(PKG_NAME)
 
-compile-darwin-arm:	create-releases-directory
-	@$(echo "Building Darwin ARM")
-	GOOS=darwin GOARCH=arm	go build -o \
-		$(BIN_FOLDER)/$(BIN_NAME)-darwin-arm \
-		$(PKG_NAME)
 
 clean:
 	go clean
@@ -67,3 +61,5 @@ test: lint
 	@go test ./...
 
 
+codecov:
+	go

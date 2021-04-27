@@ -1,0 +1,5 @@
+# Darwin ARM build should be done on special platform
+
+
+on:
+  push:
