@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/abdulhannanali/protonvpn-ikev2-generator/generator"
-	"github.com/abdulhannanali/protonvpn-ikev2-generator/protonvpn"
+	"github.com/abdulhannanali/ipsec-conf-generator-protonvpn/generator"
+	"github.com/abdulhannanali/ipsec-conf-generator-protonvpn/protonvpn"
 )
 
 const defaultIntValue int = -1

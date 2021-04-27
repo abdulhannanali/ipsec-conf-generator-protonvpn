@@ -3,7 +3,7 @@ package generator
 import (
 	"strings"
 
-	"github.com/abdulhannanali/protonvpn-ikev2-generator/protonvpn"
+	"github.com/abdulhannanali/ipsec-conf-generator-protonvpn/protonvpn"
 )
 
 type FilterOptions protonvpn.FilterOptions

@@ -2,7 +2,7 @@
 BIN_NAME=profiles-generator-cli
 BIN_FOLDER=releases
 
-PKG_NAME=github.com/abdulhannanali/protonvpn-ikev2-generator/cli/main
+PKG_NAME=github.com/abdulhannanali/ipsec-conf-generator-protonvpn/cli/main
 
 # Multiple architectures
 AMD64_ARCH=amd64
