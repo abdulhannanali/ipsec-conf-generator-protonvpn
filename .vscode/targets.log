@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Apr 27 15:26:52 2021
+# Make data base, printed on Tue Apr 27 15:45:57 2021
 
 # Variables
 
@@ -25,6 +25,8 @@ DESKTOP_SESSION = ubuntu
 # environment
 XDG_SESSION_CLASS = user
 # environment
+gvm_go_name = go1.16.2
+# environment
 SNAP_COMMON = /var/snap/code/common
 # environment
 XDG_SESSION_TYPE = x11
@@ -34,8 +36,6 @@ VSCODE_LOG_NATIVE = false
 NVM_INC = /home/lampriversong/.nvm/versions/node/v15.13.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -50,6 +50,8 @@ CURDIR := /home/lampriversong/work-folder/code/github-repos/abdulhhannanali/wire
 SHELL = /bin/sh
 # environment
 SNAP_DATA = /var/snap/code/62
+# environment
+VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -67,7 +69,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+IM_CONFIG_PHASE = 1
 # makefile (from 'Makefile', line 9)
 386_ARCH = 386
 # environment
@@ -84,26 +86,24 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# environment
-_ = /snap/code/62/usr/share/code/code
 # makefile (from 'Makefile', line 8)
 AMD64_ARCH = amd64
 # environment
 MANAGERPID = 1960
 # environment
-GVM_PATH_BACKUP = /home/lampriversong/.gvm/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GVM_PATH_BACKUP = /home/lampriversong/.gvm/bin:/home/lampriversong/.nvm/versions/node/v15.13.0/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = ur_PK
 # environment
-VSCODE_CWD = /home/lampriversong
+VSCODE_CWD = /home/lampriversong/work-folder/code/github-repos/abdulhhannanali/wireguard-protonvpn-profile-generator
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/62/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/lampriversong/.local/bin:/home/lampriversong/.nvm/versions/node/v15.13.0/bin:/home/lampriversong/.gvm/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/lampriversong/.gvm/pkgsets/go1.16.2/global/bin:/home/lampriversong/.gvm/gos/go1.16.2/bin:/home/lampriversong/.gvm/pkgsets/go1.16.2/global/overlay/bin:/home/lampriversong/.gvm/bin:/home/lampriversong/.gvm/bin:/home/lampriversong/.nvm/versions/node/v15.13.0/bin:/home/lampriversong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
@@ -116,6 +116,8 @@ GDK_PIXBUF_MODULE_FILE = /home/lampriversong/snap/code/common/.cache/gdk-pixbuf-
 SNAP = /snap/code/62
 # makefile (from 'Makefile', line 15)
 GOOS_DARWIN = darwin
+# environment
+GOPATH = /home/lampriversong/.gvm/pkgsets/go1.16.2/global
 # environment
 NVM_BIN = /home/lampriversong/.nvm/versions/node/v15.13.0/bin
 # environment
@@ -137,13 +139,11 @@ GDK_PIXBUF_MODULEDIR = /snap/code/62/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5877
 # automatic
 %F = $(notdir $%)
 # environment
@@ -161,6 +161,8 @@ PWD = /home/lampriversong/work-folder/code/github-repos/abdulhhannanali/wireguar
 # environment
 SSH_AGENT_PID = 2139
 # environment
+PKG_CONFIG_PATH = /home/lampriversong/.gvm/pkgsets/go1.16.2/global/overlay/lib/pkgconfig:
+# environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
@@ -168,6 +170,8 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
 HOME = /home/lampriversong
+# environment
+LD_LIBRARY_PATH = /home/lampriversong/.gvm/pkgsets/go1.16.2/global/overlay/lib:
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
@@ -198,6 +202,8 @@ GVM_VERSION = 1.0.22
 LC_TIME = ur_PK
 # environment
 SNAP_REAL_HOME = /home/lampriversong
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -207,13 +213,15 @@ QT_IM_MODULE = ibus
 # environment
 SNAP_USER_DATA = /home/lampriversong/snap/code/62
 # environment
-SHLVL = 0
+SHLVL = 1
+# environment
+GVM_OVERLAY_PREFIX = /home/lampriversong/.gvm/pkgsets/go1.16.2/global/overlay
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # makefile (from 'Makefile', line 3)
 BIN_FOLDER = releases
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-384d8452-2672-4ba7-a806-780cf68b2e6f.sock
+gvm_pkgset_name = global
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -226,6 +234,8 @@ LC_MONETARY = ur_PK
 .DEFAULT_GOAL := lint
 # environment
 XDG_CURRENT_DESKTOP = Unity
+# environment
+GOROOT = /home/lampriversong/.gvm/gos/go1.16.2
 # makefile (from 'Makefile', line 2)
 BIN_NAME = profiles-generator-cli
 # automatic
@@ -236,14 +246,14 @@ LC_TELEPHONE = ur_PK
 MAKE_COMMAND := make
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /home/lampriversong/.config/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# environment
+OLDPWD = /home/lampriversong/work-folder/code/github-repos/abdulhhannanali
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-5f75d1a9-1.55.2-main.sock
-# environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -264,6 +274,9 @@ QT_ACCESSIBILITY = 1
 DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKEFILES := 
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
 # environment
 SNAP_COOKIE = hcF-fqMKjKHodZVfjiiIzi9zmJZI5uDHoPEZhPT0TxFAEmbYDrOf
 # environment
@@ -282,13 +295,14 @@ GOOS_WINDOWS = windows
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a9fd4972_8d54_49d7_b743_879b6da66c72
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.235
 # default
 SUFFIXES := 
- 
-make: *** No rule to make target 'all'.  Stop.
- 
 # environment
 SNAP_REEXEC = 
 # environment
@@ -306,9 +320,15 @@ LC_ADDRESS = ur_PK
 # environment
 LANG = en_US.UTF-8
 # environment
-VSCODE_PID = 5924
+TERM = xterm-256color
+# environment
+VSCODE_PID = 8640
+# environment
+DYLD_LIBRARY_PATH = /home/lampriversong/.gvm/pkgsets/go1.16.2/global/overlay/lib:
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-31876566-20f1-4f0a-b0c6-abffeed6f284.sock
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=24/172=14%
+# Load=157/1024=15%, Rehash=0, Collisions=23/182=13%
 
 # Pattern-specific Variable Values
 
@@ -343,7 +363,7 @@ compile-linux-amd64:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 23):
-	@GOOS=$(GOOS_LINUX) GOARCH=$(AMD64_ARCH) go build  	
+	@GOOS=$(GOOS_LINUX) GOARCH=$(AMD64_ARCH) go build $(PKG_NAME) -o $(bash ./make_scripts/binary_name.sh)
 
 # Not a target:
 all:
@@ -355,7 +375,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-04-27 05:24:55.193677375
+#  Last modified 2021-04-27 15:44:32.613771141
 #  File has been updated.
 #  Successfully updated.
 
@@ -405,6 +425,6 @@ lint: golangci-lint run .
 # strcache performance: lookups = 35 / hit rate = 28%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/35=3%
-# Finished Make data base on Tue Apr 27 15:26:52 2021
+# Finished Make data base on Tue Apr 27 15:45:57 2021
 
  
