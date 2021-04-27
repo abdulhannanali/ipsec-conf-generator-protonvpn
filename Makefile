@@ -6,6 +6,10 @@ export PKG_NAME=github.com/abdulhannanali/ipsec-conf-generator-protonvpn/cli/mai
 
 generate_bin_name_fn = compile-ipsec-generator-$(0)-$(1)
 
+
+install:
+	@go install ./...
+
 compile-all: compile-windows compile-linux compile-darwin
 compile-windows: compile-windows-amd64 compile-windows-386
 compile-linux: compile-linux-amd64 compile-linux-386
@@ -59,6 +63,3 @@ lint:
 
 test: lint
 	@go test ./...
-
-install:
-	go install ./...
