@@ -23,12 +23,11 @@ jobs:
             go-version: ${{matrix.go-version}}
         - name: Checkout Code
           uses: actions/checkout@v2
+        - name: Install
+          run: go install ./...
         - name: Lint
           run:  make install-lint lint
         - name: Test
           run: make test
-        - name: Build ### Tests whether the build is succeeding 
-          run: make build
-
-
-  
+        - name: compile-all
+          run: make compile-all

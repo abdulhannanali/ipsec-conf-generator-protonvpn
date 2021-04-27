@@ -1,5 +1,18 @@
-# Darwin ARM build should be done on special platform
-
-
 on:
   push:
+    tags:
+      - v1.* ### only v1 will be pushed to release
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-go@v2
+        with:
+          go-version: 1.x
+      - name: Compiles all the binaries
+        run:  make compile-all
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          path: releases/*
