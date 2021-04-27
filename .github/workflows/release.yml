@@ -10,8 +10,9 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: 1.x
+      - run: go install ./...
       - name: Compiles all the binaries
-        run:  make install compile-all
+        run:  make compile-all
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
