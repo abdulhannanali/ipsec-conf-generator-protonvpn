@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/abdulhannanali/protonvpn-ikev2-generator/cli"
+	"github.com/abdulhannanali/ipsec-conf-generator-protonvpn/cli"
 )
 
 func main() {
