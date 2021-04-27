@@ -22,7 +22,3 @@ type LogicalServerLocation struct {
 	Lat  float64
 	Long float64
 }
-
-func (logicalServer *LogicalServer) isSecureCore() bool {
-	return logicalServer.EntryCountry == logicalServer.ExitCountry
-}

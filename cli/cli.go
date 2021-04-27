@@ -38,13 +38,17 @@ func InitCmd(args []string) error {
 		return nil
 	}
 
-	cmd.Parse(args[1:])
+	err := cmd.Parse(args[1:])
+
+	if err != nil {
+		return err
+	}
 
 	if err := validateFlagValues(flagValues); err != nil {
 		return err
 	}
 
-	err := execute(flagValues)
+	err = execute(flagValues)
 
 	if err != nil {
 		return err
@@ -62,7 +66,11 @@ func execute(flagValues *FlagValues) error {
 	}
 
 	if filePath != "" {
-		os.WriteFile(filePath, []byte(configurationFile), 0666)
+		err = os.WriteFile(filePath, []byte(configurationFile), 0666)
+
+		if err != nil {
+			return err
+		}
 	} else {
 		os.Stdout.WriteString(configurationFile)
 	}
@@ -75,7 +83,12 @@ func createCmdFlagSet() (*flag.FlagSet, *FlagValues) {
 	flagValues = FlagValues{}
 
 	Cmd.Usage = func() {
-		helpTemplate.Execute(Cmd.Output(), helpTemplateParams{githubRepoLink})
+		err := helpTemplate.Execute(Cmd.Output(), helpTemplateParams{githubRepoLink})
+
+		if err != nil {
+			panic(err)
+		}
+
 		fmt.Fprintf(Cmd.Output(), "\n\nUsage of %s:\n\n", flagSetName)
 		Cmd.PrintDefaults()
 		fmt.Println("")

@@ -14,7 +14,7 @@ func (logicals LogicalServers) GetLogicalServerByName(name string) *LogicalServe
 
 func (logicals LogicalServers) GetLogicalServerByDomain(domain string) *LogicalServer {
 	for _, logicalServer := range logicals {
-		if logicalServer.Domain == logicalServer.Domain {
+		if logicalServer.Domain == domain {
 			return &logicalServer
 		}
 	}
