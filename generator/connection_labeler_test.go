@@ -38,7 +38,7 @@ func Test_labelConnection(t *testing.T) {
 	}{
 		{
 			labelConnectionInput{1, "ca.01.protonvpn.com", 0},
-			"ca_01_protonvpn_com_tier_1_server_idx_0",
+			"ca_01_protonvpn_com",
 		},
 	}
 

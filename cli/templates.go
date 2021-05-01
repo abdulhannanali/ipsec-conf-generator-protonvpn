@@ -7,7 +7,6 @@ import (
 
 //go:embed templates/help.txt
 var helpRaw string
-
 var helpTemplate *template.Template
 
 type helpTemplateParams struct {

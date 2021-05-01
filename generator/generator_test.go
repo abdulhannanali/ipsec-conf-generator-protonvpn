@@ -41,7 +41,7 @@ func Test_getConnectionString(t *testing.T) {
 			[]string{
 				"right=a.example.com",
 				"eap_identity=X",
-				"rightid=%%a.example.com",
+				"rightid=%a.example.com",
 				"conn Label",
 				"rightca=/home/random",
 			},
@@ -50,7 +50,7 @@ func Test_getConnectionString(t *testing.T) {
 			[]string{"Label2", "b.example.com", "Y", "/home/random1"},
 			[]string{
 				"right=b.example.com",
-				"rightid=%%b.example.com",
+				"rightid=%b.example.com",
 				"eap_identity=Y",
 				"rightca=/home/random1",
 				"conn Label2",
@@ -62,7 +62,7 @@ func Test_getConnectionString(t *testing.T) {
 				"rightca=/home/random2",
 				"right=c.example.com",
 				"eap_identity=Z",
-				"rightid=%%c.example.com",
+				"rightid=%c.example.com",
 				"conn Label3",
 			},
 		},

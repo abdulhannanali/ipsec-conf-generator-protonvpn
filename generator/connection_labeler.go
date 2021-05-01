@@ -1,7 +1,6 @@
 package generator
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -9,14 +8,7 @@ import (
  * Labels the connections
  */
 func generateConnectionLabel(domain string, tier int, serverIdx int) string {
-	domainName := convertProtonVpnDomainToName(domain)
-
-	return fmt.Sprintf(
-		"%s_tier_%d_server_idx_%d",
-		domainName,
-		tier,
-		serverIdx,
-	)
+	return convertProtonVpnDomainToName(domain)
 }
 
 /**

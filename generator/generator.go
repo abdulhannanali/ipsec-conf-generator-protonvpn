@@ -45,7 +45,7 @@ func CreateFile(inputParameters GenerationInputParameters) (string, error) {
 }
 
 func generateConnections(inputParameters GenerationInputParameters, logicalServers protonvpn.LogicalServers) ([]string, error) {
-	connections := make([]string, len(logicalServers))
+	connections := make([]string, 0)
 
 	for _, logicalServer := range logicalServers {
 		for serverIdx, serverInfo := range logicalServer.Servers {
