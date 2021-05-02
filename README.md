@@ -1,5 +1,7 @@
 # ipsec-conf-generator-protonvpn
 
+![Badge](https://github.com/abdulhannanali/ipsec-conf-generator-protonvpn/actions/workflows/main.yml/badge.svg)
+
 
 This tool is used for generation for IPSec configuration for ProtonVPN, which makes it similar to the usecase of downloading a directory of all OpenVPN files for ProtonVPN. Can expose the full power of ProtonVPN ecosystem at your hands with an alternative protocol
 
@@ -17,7 +19,7 @@ It relies on legacy ipsec.conf file, and although I have now come to know that S
 
 ## Architecture/OS Support
 
-Checkout [releases](/releases/latest) for more information about Architecture/OS Support. All three major desktop platforms: Ubuntu, MacOS, Windows are supported.
+Checkout [releases](https://github.com/abdulhannanali/ipsec-conf-generator-protonvpn/releases/latest) for more information about Architecture/OS Support. All three major desktop platforms: Ubuntu, MacOS, Windows are supported.
 
 ## Usage
 
@@ -32,7 +34,7 @@ For an example checkout [example.sh](./example.sh)
 
 ### Example config file
 
-An example config file is pushed each time a new release is done. You can check it out in [releases](/releases/latest), it is named protonvpn.conf.
+An example config file is pushed each time a new release is done. You can check it out in [releases](https://github.com/abdulhannanali/ipsec-conf-generator-protonvpn/releases/latest), it is named protonvpn.conf.
 
 
 ### Feature Requests/Feedback   
