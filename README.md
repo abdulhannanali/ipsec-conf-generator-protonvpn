@@ -17,7 +17,7 @@ It relies on legacy ipsec.conf file, and although I have now come to know that S
 
 ## Architecture/OS Support
 
-Checkout [releases](./releases) for more information about Architecture/OS Support. All three major desktop platforms: Ubuntu, MacOS, Windows are supported.
+Checkout [releases](/releases/latest) for more information about Architecture/OS Support. All three major desktop platforms: Ubuntu, MacOS, Windows are supported.
 
 ## Usage
 
@@ -32,11 +32,10 @@ For an example checkout [example.sh](./example.sh)
 
 ### Example config file
 
-An example config file is pushed each time a new release is done. You can check it out in [releases](/releases), it is named protonvpn.conf.
+An example config file is pushed each time a new release is done. You can check it out in [releases](/releases/latest), it is named protonvpn.conf.
 
 
-
-### Feature Requests/Feedback
+### Feature Requests/Feedback   
 
 If you have any future request/feedback, please go to Issues tab and open an issue. I'd love to hear from you.
 
