@@ -30,6 +30,10 @@ More can be learnt about the usage by using the command command. You'd need a cl
 
 For an example checkout [example.sh](./example.sh)
 
+### Example config file
+
+An example config file is pushed each time a new release is done. You can check it out in [releases](/releases), it is named protonvpn.conf.
+
 
 
 ### Feature Requests/Feedback
